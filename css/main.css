@@ -1,0 +1,271 @@
+
+
+/*----write your css here----*/
+
+
+
+
+
+nav a{
+    color:aliceblue !important;
+}
+
+.nav-link {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+     padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+
+.btn-outline-purple {
+    border: 1px solid purple !important;
+    color: purple;
+}
+
+.btn-outline-purple:hover{
+    background: purple; 
+    color: aliceblue;
+}
+
+.btn-info, .btn-warning, .btn-primary, .btn-danger, .btn-dark, .btn-success{
+    border: 1px solid aliceblue !important;
+}
+
+.col-md-3{
+    margin: auto !important;
+}
+
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+/*----comment this part out and have a look at the ipad's look----*/
+@media (min-width: 768px){
+.col-md-3 {
+   
+     max-width: 50% !important;
+}
+}
+
+
+
+.carousel-caption{
+    bottom: 45% !important;
+}
+
+
+.carousel-caption h5{
+    font-size:55px !important;
+}
+
+.carousel-caption p{
+    font-size:30px !important;
+}
+
+
+
+.btn{
+    border: none !important;
+}
+
+
+     .bg-black{
+        background: black;
+    }
+
+
+
+     .poster{
+        width:300px;
+        height:450px;
+         border-radius: 5px;
+    }
+
+ 
+/*-------poster overlay ------*/
+.custome-container {
+  position: relative;
+   width:300px;
+   height:450px;
+    display: inline-block;
+     border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:300px;
+  height:450px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fb0;
+     border-radius: 5px;
+}
+
+
+.custome-container:hover .overlay {
+  opacity: 1;
+    cursor:pointer;
+}
+
+.text {
+  color: #212121;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*------------------Movie of the month--------------------*/
+.featuredMovie{
+    width:450px;
+    height:550px;
+
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+       display: none !important;
+    }
+}
+/*-------to control the size of media objects -------*/
+
+.mr-3{
+    width:64px !important;
+    height: 100px !important;
+}
+
+
+.socialMedia .col-lg{
+transition: all 300ms ease-in-out !important;   
+}
+
+.socialMedia .col-lg:hover{
+ color: black !important;
+ background: darkgoldenrod !important;
+    border: 1px solid darkgoldenrod !important;
+ cursor:pointer !important;
+}
+
+
+/*-------------------- new added -----------------*/
+
+
+.poster2{
+    width:300px !important;
+    height:500px;
+}
+
+
+.fade {
+    transition: opacity 300ms ease-in-out;
+    background: #000000b7;
+  
+}
+
+
+
+.modal-content {
+    margin-top: 10px !important;
+   background: black !important;
+    color:white !important;
+    box-shadow: 0 0 301px orange !important;
+}
+
+@media screen and (max-width:640px){
+    .modal-content {
+    margin-top: 0px !important;
+    }
+    .poster2{
+    width:100% !important;
+}
+    
+    .list-group-flush{
+        padding-left: 0 !important;
+    }
+    
+    
+    
+}
+
+.fa-times{
+    color: white;
+    padding:12px;
+    float:right;
+}
+    
+
+.list-group-item{
+   background: black !important; 
+    border:1px solid gray;
+}
+
+
+.jbtn{
+    background: transparent;
+    color: white;
+}
+
+
+
+
+.button:active, 
+ button:active,
+.button:focus, 
+ button:focus,
+.button:hover, 
+ button:hover{
+    border:none !important;
+    outline:none !important;
+}
+
+
+#movieName{
+    background: transparent !important;
+}
+
+
+.fab, .far, .fas{
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+@media (min-width: 992px){
+.modal-lg {
+    max-width: 1100px;
+}
+}
+
+
+/*------apinner loading------*/
+.fa-spinner {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

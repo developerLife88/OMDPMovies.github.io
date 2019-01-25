@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> OMDB </title>
+ 
+    
+    <!------------------------------------------------->    
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+<!------------------------------------------------->  
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
+    
+<!------resposive design------> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ 
+    
+<!------------Custome style -- main.css--------->
+
+    
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
+<!------Bootstrap css and js cdn files ------->    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     
+    
+    
+<link href="css/main.css" rel="stylesheet">    
+</head>
+
+  <style>
+   body,html{
+    margin:0;
+    height:100%;
+  background-image: url(img/nataliewood.png);
+       background-size: cover;
+       background-repeat: repeat;
+       background-position: center;
+    font-family: 'Nunito', cursive !important;
+} 
+     
+</style>      
+    
+<body>
+    
+<div class="container-fluid" id="c1">
+    
+    <div class="container-fluid m-auto">
+        
+        
+        
+        
+<!-----alert if the input field is empty or submited invaled movie name --->
+  <br>  
+<div class="alert bg-info alert-dismissible fade show" role="alert" style="display: none;">
+  <strong>Reminder:</strong> Please enter a valid movie name.
+ <!--- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>   -->
+</div> 
+        
+        
+        
+        
+    
+    <form id="movieForm"  class="pt-5">
+  <div class="row ">
+    <div class="col">  
+    <input type="text" class="form-control" id="movieName" placeholder="Enter movie name here">
+         </div>
+  <div class="col">
+  <button type="submit" class="btn btn-warning btn-block" id="s"><i class="fas fa-search"></i></button>
+      </div>
+         </div>
+    </form>    
+        
+        
+    </div>
+    
+    
+    
+    
+    <div class="countainer-fluid text-center pt-5 pb-5">
+<div class="row d-inline-block" id="mlist"> 
+    
+    
+        </div>
+    </div>
+    
+    
+    
+    
+<!------------------------------------------------->
+    
+
+
+<div class="modal fade bd-example-modal-lg m1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!--- will come from js------>
+         <button type="button" class="btn jbtn" data-dismiss="modal"><i class="fas fa-times"></i></button>
+      <div class="container-fluid"  id="movieDetails"> 
+          
+        </div>  
+    <!----------->    
+    </div>
+  </div>
+</div>
+  
+    
+    
+    
+    
+    
+
+    
+ 
+<!--- spinner loading + CSS 
+https://codepen.io/nksimmons/pen/NqGdNo
+
+<button class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"><i class="fas fa-spinner"></i></span> Loading...</button>
+   
+----->
+        
+    
+    
+
+ </div> 
+    
+ <!----------- jQuery ------------>
+    <script src="js/jquery-3.3.1.min.js"></script>    
+    
+    <!-----this is an external js ----->
+ <script src="js/main.js"></script> 
+    
+    
+
+</body>
+
+</html>
